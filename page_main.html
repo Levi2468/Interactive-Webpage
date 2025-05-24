@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>
+jquery layout</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<link rel="stylesheet" href="css_main.css">
+<script>
+$(document).ready(function(){
+$(".vertical").click(function(){
+$("ul").animate({width:'toggle'});
+});
+$(".verti").click(function(){
+$("ul").fadeOut("fast");
+});
+});
+</script>
+</head>
+<body>
+<div class="container">
+<header><h1>TOP FOUR CONTINENT</h1></header>
+<nav><a href="page_main.html" class="continent">All</a>
+<a href="page_image.html" class="continent">images</a>
+<a href="page_map_video.html" class="continent">videos</a>
+<a href="page_books.html" class="continentend">books</a>
+</nav>
+<div class="vertical">&nbsp;&nbsp;<sub> &equiv;</sub></div>
+<ul>
+<br><li><a href="frame_home.html" class="verti" target="continent_frame">Home</a></li>
+<li><a href="frame_one.html" class="verti" target="continent_frame">continent 1</a></li>
+<li><a href="frame_two.html" class="verti" target="continent_frame">continent 2</a></li>
+<li><a href="frame_three.html" class="verti" target="continent_frame">continent 3</a></li>
+<li><a href="frame_four.html" class="verti" target="continent_frame">continent 4</a></li></ul>
+<iframe src="frame_home.html" name="continent_frame" target="continet_frame"></iframe>
+
+<footer>All copy rights are reserved &copy</footer>
+</div>
+</body>
+</html>

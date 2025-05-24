@@ -1,0 +1,14 @@
+$(document).ready(function(){
+$(".asia").hover(function(){
+$(".asian").fadeToggle("fast");
+});
+$(".africa").hover(function(){
+$(".african").fadeToggle("fast");
+});
+$(".na").hover(function(){
+$(".naian").fadeToggle("fast");
+});
+$(".sa").hover(function(){
+$(".saian").fadeToggle("fast");
+});
+});
